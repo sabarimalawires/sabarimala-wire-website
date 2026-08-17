@@ -155,7 +155,7 @@ nav a:hover {
     inset: 0;
 
     background-image:
-        url("..//assets/projects/hero1.png");
+        url("../assets/projects/hero1.png");
 
     background-size: cover;
     background-position: center;
