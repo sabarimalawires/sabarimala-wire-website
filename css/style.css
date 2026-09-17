@@ -8402,17 +8402,25 @@ footer {
 ========================================================= */
 
 .hero-brand {
-    width: 430px;
+    width: 330px;
     max-width: 80%;
-
     margin-bottom: 28px;
 
     display: flex;
     align-items: center;
+
+    position: relative;
+    z-index: 5;
+    left: -5vw;
+    top: 150px;
+    transform: translateY(-120px);
 }
 
+
+
+
 .hero-brand img {
-    width: 100%;
+    width: 200%;
     height: auto;
 
     display: block;
@@ -10519,5 +10527,139 @@ footer {
         transform: translateX(-45px) !important;
         width: 280px !important;
         height: auto !important;
+    }
+}
+
+/* ================= SWP FOOTER BRAND ================= */
+
+.footer-bottom-title {
+    max-width: 1250px;
+    margin: 45px auto 35px;
+}
+
+.swp-brand-lockup {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+/* SWP LOGO IMAGE */
+.swp-footer-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* SWP TEXT */
+.swp-brand-lockup span {
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(00px, 12vw, 170px);
+    font-weight: 800;
+    line-height: .8;
+    letter-spacing: -9px;
+    color: rgba(145,166,109,.18);
+}
+
+@media (max-width: 900px) {
+
+    .footer-bottom-title {
+        margin: 35px auto 30px;
+    }
+
+    .swp-brand-lockup {
+        gap: 18px;
+    }
+
+    .swp-footer-logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .swp-brand-lockup span {
+        font-size: 72px;
+        letter-spacing: -5px;
+    }
+
+}
+
+
+/* Move the lower developer section down */
+.footer-bottom {
+    margin-top: 55px;
+}
+
+/* If the developer card is inside the footer content */
+.footer-developer {
+    margin-top: 35px;
+}
+
+/* Horizontal line above copyright */
+.footer-divider {
+    margin-top: 55px;
+}
+
+.footer-swp {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(150px, 10vw, 400px);
+    font-weight: 700;
+    line-height: 0.72;
+    letter-spacing: -15px;
+    color: #263523;
+    white-space: nowrap;
+}
+
+/* =========================================================
+   MOBILE HERO LOGO — ONLY
+========================================================= */
+
+@media screen and (max-width: 600px) {
+
+    .hero-content .hero-brand {
+        width: 280px !important;
+        max-width: 250px !important;
+
+        margin: 0 0 25px 0 !important;
+
+        position: relative !important;
+        left: -41px !important;
+        top: 0 !important;
+
+        transform: translateY(5px) !important;
+
+        z-index: 10 !important;
+    }
+
+    .hero-content .hero-brand img {
+        width: 370px !important;
+        max-width: 400px !important;
+        height: auto !important;
+
+        display: block !important;
+    }
+
+}
+
+/* =========================================
+   FOOTER SWP — MOBILE ONLY
+========================================= */
+
+@media screen and (max-width: 600px) {
+
+    .footer-swp {
+        font-size: 95px !important;
+    }
+
+    .swp-footer-logo {
+        width: 110px !important;
+        height: 110px !important;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .developer-branding {
+        position: relative !important;
+        top: 45px !important;
+        
     }
 }
