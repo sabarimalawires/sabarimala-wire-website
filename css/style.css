@@ -5465,7 +5465,7 @@ footer {
 
 .leader-image-area {
     position: relative;
-    min-height: 620px;
+    min-height: 720px;
 
     display: flex;
     align-items: flex-end;
@@ -5853,7 +5853,7 @@ footer {
     }
 
     .md-block .leader-image-area {
-        min-height: 520px;
+        min-height: 510px;
     }
 
     .md-block .leader-shape {
@@ -10661,5 +10661,11 @@ footer {
         position: relative !important;
         top: 45px !important;
         
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .leader-caption {
+        translate: -100px 55px !important; /* horizontal vertical */
     }
 }
